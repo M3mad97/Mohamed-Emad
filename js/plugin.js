@@ -1,9 +1,9 @@
 /* Global $,*/
 
-$(document).ready(function () {
+$(document).ready(function() {
     'use strict';
     // Navbar button Edit
-    $("nav .navbar-header button").click(function () {
+    $("nav .navbar-header button").click(function() {
         $("nav .navbar-header button").toggleClass("add");
     });
 
@@ -16,21 +16,20 @@ $(document).ready(function () {
         ],
         typeSpeed: 125,
         smartBackspace: true,
-        loop: true,
         cursorChar: "_"
     });
     // End Typed.js
-    
+
     // Loading-page
-    $(window).on("load", function () {
+    $(window).on("load", function() {
         // show scroll
         $("body").css("overflow", "auto");
         // hide loading-overlay
-        $(".loading-overlay").fadeOut(2000, function () {
+        $(".loading-overlay").fadeOut(2000, function() {
             $(this).remove();
         });
     });
-    
+
     // scroll 
     // Cache selectors
     var lastId,
@@ -39,14 +38,14 @@ $(document).ready(function () {
         // All list items
         menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
-        scrollItems = menuItems.map(function () {
+        scrollItems = menuItems.map(function() {
             var item = $($(this).attr("href"));
             if (item.length) { return item; }
         });
 
     // Bind click handler to menu items
     // so we can get a fancy scroll animation
-    menuItems.click(function (e) {
+    menuItems.click(function(e) {
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
         $('html, body').stop().animate({
@@ -56,18 +55,18 @@ $(document).ready(function () {
     });
 
     // Bind to scroll
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         // Get container scroll position
         var fromTop = $(this).scrollTop() + topMenuHeight,
-        
-        // Get id of current scroll item
-            cur = scrollItems.map(function () {
-                if ($(this).offset().top < fromTop) {return this; }
+
+            // Get id of current scroll item
+            cur = scrollItems.map(function() {
+                if ($(this).offset().top < fromTop) { return this; }
             });
         // Get the id of the current element
         cur = cur[cur.length - 1];
         var id = cur && cur.length ? cur[0].id : "";
-        
+
         if (lastId !== id) {
             lastId = id;
             // Set/remove active class

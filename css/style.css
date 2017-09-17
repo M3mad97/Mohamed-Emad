@@ -1,31 +1,47 @@
 /* Global editing */
-body{
+
+body {
     padding-top: 50px;
     font-family: monospace;
     overflow: hidden
 }
 
-a{text-decoration: none}
+a {
+    text-decoration: none
+}
+
+
 /* End Global Editing */
 
+
 /************************ Start Nav ************************/
-button.navbar-toggle{position: relative}
-.add span:nth-child(2){
+
+button.navbar-toggle {
+    position: relative
+}
+
+.add span:nth-child(2) {
     transform: rotate(-45deg) !important;
     position: absolute;
     top: 11px
-      }
-.add span:nth-child(3){display: none}
+}
 
-.add span:nth-child(4){
+.add span:nth-child(3) {
+    display: none
+}
+
+.add span:nth-child(4) {
     transform: rotate(45deg);
     margin-top: 0;
-        
 }
+
+
 /************************ End Nav **************************/
 
+
 /************************ Start intro **********************/
-header{
+
+header {
     background: url(../img/bg-Home.jpg) no-repeat center center fixed;
     background-size: cover;
     position: relative;
@@ -33,8 +49,9 @@ header{
     max-width: 100%;
     height: 700px;
 }
-.over-lay{
-    background-color: rgba(0,0,0,0.7);
+
+.over-lay {
+    background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -42,169 +59,235 @@ header{
     width: 100%;
     height: 100%;
 }
-header .intro{
+
+header .intro {
     display: inline-block;
     margin-top: 25%;
     color: #fff;
     font-size: 50px;
 }
-/************************ End intro ***********************/
 
-/************************ Start about-me ******************/
-.about-me{
-    font-size: 25px;
-    padding: 70px 0 70px 0;
-}
-.about-me aside img{
-    -webkit-box-shadow: 2px 7px 24px -2px #000;
-    -moz-box-shadow: 2px 7px 24px -2px #000;
-    box-shadow: 2px 7px 24px -2px #000;
-    height: 300px;
-    width: 300px
-}
-/************************ End about-me ********************/
-
-/************************ Start skills ********************/
-.skills{
-    background-color: rgba(0,0,0,0.2);
-    padding: 50px 0 50px 0;
+header ul {
+    margin-top: 200px;
 }
 
-.skills .h2{
-    color: #fff;
-    margin-bottom: 30px
-}
-.skills .row p{
-    font-size: 20px
-}
-.skills .progress{
-    height: 8px;
-    margin-top: 20px;
-    margin-right: 10px
-}
-
-/************************ End skills **********************/
-
-/************************ Start portfolio *****************/
-.portfolio{padding: 50px 0 50px 0}
-
-.portfolio .info{
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    margin-top:50px;
-    box-shadow:1px 2px 6px 2px #aaa;
-}
-
-.portfolio .info img{
-    width: 100%;
-    height: 980px;
-    transition: 4s all ease-in-out
-}
-
-.portfolio .info:hover img{
-    transform: translateY(-680px);
-}
-/************************ End portfolio *******************/
-
-/************************ Start contact-me ****************/
-.contact{
-    background: url("../img/bg-contact.jpg") no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100%;
-    padding: 50px 0 10px 0;
-}
-.contact .h2{
-    color: #fff;
-    margin-bottom: 30px;
-    margin-top: 0
-}
-
-.contact textarea.input-lg{height: 108px}
-
-.contact ul {margin-top: 40px}
-
-.contact ul li{
+header ul li {
     display: inline-block;
-    margin-right: 5px
+    margin-right: 15px
 }
-.contact ul li i{
+
+header ul li i {
     -webkit-transition: all .4s linear;
     -moz-transition: all .4s linear;
     -o-transition: all .4s linear;
     -ms-transition: all .4s linear;
     transition: all .4s linear;
-    color: #000
+    color: #ccc
 }
-.contact ul li i:hover {
-    -webkit-transform: scale(1.3,1.3) rotateY(360deg);
-    -moz-transform: scale(1.3,1.3) rotateY(360deg);
-    -o-transform: scale(1.3,1.3) rotateY(360deg);
-    transform: scale(1.3,1.3) rotateY(360deg)
+
+header ul li i:hover {
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3)
 }
+
+header ul li a i.fa.fa-3x.fa-facebook-square:hover {
+    color: #243681;
+}
+
+header ul li a i.fa.fa-3x.fa-twitter-square:hover {
+    color: #50A5E6
+}
+
+header ul li a i.fa.fa-3x.fa-linkedin-square:hover {
+    color: #0077B5;
+}
+
+header ul li a i.fa.fa-3x.fa-google-plus:hover {
+    color: #D34836;
+}
+
+header ul li a i.fa.fa-3x.fa-github:hover {
+    color: #000;
+}
+
+
+/************************ End intro ***********************/
+
+
+/************************ Start about-me ******************/
+
+.about-me {
+    font-size: 25px;
+    padding: 70px 0 70px 0;
+}
+
+.about-me aside img {
+    -webkit-box-shadow: 2px 7px 24px -2px #000;
+    -moz-box-shadow: 2px 7px 24px -2px #000;
+    box-shadow: 2px 7px 24px -2px #000;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px
+}
+
+
+/************************ End about-me ********************/
+
+
+/************************ Start skills ********************/
+
+.skills {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 50px 0 50px 0;
+}
+
+.skills .h2 {
+    color: #fff;
+    margin-bottom: 30px
+}
+
+.skills .row p {
+    font-size: 20px
+}
+
+.skills .progress {
+    height: 8px;
+    margin-top: 20px;
+    margin-right: 10px
+}
+
+
+/************************ End skills **********************/
+
+
+/************************ Start portfolio *****************/
+
+.portfolio {
+    padding: 50px 0 50px 0
+}
+
+.portfolio .info {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    margin-top: 50px;
+    box-shadow: 1px 2px 6px 2px #aaa;
+}
+
+.portfolio .info img {
+    width: 100%;
+    height: 980px;
+    transition: 4s all ease-in-out
+}
+
+.portfolio .info:hover img {
+    transform: translateY(-680px);
+}
+
+
+/************************ End portfolio *******************/
+
+
+/************************ Start contact-me ****************/
+
+footer {
+    background: url("../img/bg-contact.jpg") no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100%;
+    padding: 50px 0 50px 0;
+}
+
+footer .h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+footer textarea.input-lg {
+    height: 108px
+}
+
+
 /************************ End contact-me ******************/
+
 
 /************************ Start loading-page **************/
 
-.loading-overlay{
+.loading-overlay {
     background-color: #222;
     position: absolute;
     z-index: 999999;
     height: 100%;
-    width:100%;
+    width: 100%;
     top: 0;
     left: 0;
     padding: 20px;
 }
 
 .spinner {
-  width: 100px;
-  height: 100px;
-  background-color: #333;
-  margin: 20% auto;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    margin: 20% auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
 }
 
 @keyframes sk-rotateplane {
-  0% { 
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
-  } 50% { 
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
-  } 100% { 
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
 }
+
 
 /************************ End loading-page ****************/
 
+
 /************************ Start scroll-Editing ****************/
+
 body::-webkit-scrollbar {
     width: 3px;
 }
- 
+
 body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  background-color: gray;
-  outline: 1px solid slategrey;
+    background-color: gray;
+    outline: 1px solid slategrey;
 }
+
 
 /************************ Start scroll-Editing ****************/
 
+
 /************************ Start Cursor(Typed.js) **********/
-.typed-cursor{
+
+.typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -212,21 +295,43 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     font-size: 30px;
     font-weight: 100
-        
 }
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
+
+
 /************************ End Cursor(Typed.js) ************/
